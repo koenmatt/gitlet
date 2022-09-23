@@ -1,0 +1,53 @@
+#Gitlet Design Doc
+
+
+**By** Matthew Koen
+
+## Classes and Data Structures
+
+### ActionCalls
+A place that stores the simply executables for our Main class.
+##### Methods: 
+init():
+
+commit():
+
+
+
+### Commit
+
+
+###Branch - FILE
+
+Here, the branch points to the very first commit object in the branch. Here, I will use different SHA numbers to 
+represent commits, and the different branches will be the SHA ID of that commit that comes first in the branch. 
+
+#### Instance Variables
+
+msg: the message associated with the commit
+
+parent: the parent commit. If no other commits have been created, parent is null
+
+blobs: SHA-ID's of all the blobs in this commit
+
+time: time at which the commit occured
+
+ID: stores the SHA-ID of this commit
+
+### Repository
+
+No-Input Constructor Method: creates a new commit with msg('initial commit'), a single branch 'main', main will be the 
+current branch. Time will be UNIX Epoch
+
+
+## Algorithms
+
+
+## Persistence
+
+
+
+### Staging area
+Staged for Deletion
+
+Staged for Addition
